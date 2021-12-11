@@ -1,0 +1,770 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(172, 165, 165, 0.212);
+}
+
+.imgHeader{
+    width: 80px;
+    display: flex;
+    left: 10px;
+    border: none;
+}
+
+header{
+    background-color: rgba(9, 109, 109, 0.986);
+    display: flex;
+    flex-direction: row;
+}
+
+/*menu*/
+.navMenu{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.ulMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.liMenu{
+    padding: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.linkMenu{
+    color: rgb(199, 161, 65);
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+
+.liMenu:hover .linkMenu{
+    color:rgb(253, 253, 253)
+}
+
+/*main*/
+.container{
+    background-image: url(../image/logoAgua.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tituloPages{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.subtitulo{
+    margin: 10px 0 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    background-color: rgb(199, 161, 65);
+    border-radius: 8px;
+}
+
+.iconoWhatsapp{
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: white;
+}
+
+/*index*/
+.tituloIndex{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+iframe{
+    width: 95%;
+    display: flex;
+    margin: 20px 0 0 25px;
+    border: rgb(170, 108, 108) 5px solid;
+    border-radius: 10px;
+}
+
+.parrafoVideo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color:rgba(9, 109, 109, 0.986);
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pDestacados{
+    display: flex;
+    margin: 20px 0 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: yellow 5px solid;
+}
+
+.imgDestacados{
+    width: 95%;
+    display: flex;
+    margin: 20px auto;
+    border: 5px black solid;
+}
+
+.cPadre{   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(9, 109, 109, 0.986);
+    height: 600px;
+    border: 2px solid black;
+}
+
+.textoDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+
+.productoIndex{
+    width: 150px;
+    max-width: 150px;
+    background-color: white;
+    border-radius: 2mm;
+}
+
+.productoIndex:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s all;
+    border: 4px solid rgb(218, 11, 11);
+}
+
+.texPrecio{
+    color: white;
+    font-weight: bold;
+}   
+
+/*contact*/
+.divPadre{
+    padding: 20px;
+    height: 800px;
+    box-shadow: 0 0 20px 0 rgb(12, 8, 1);
+}
+
+.spContacto{
+    display: inline-block;
+    color: red;
+}
+
+.contactoForm{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.ulContacto{
+    list-style: none;
+    padding: 0px;
+}
+
+.tituContac{
+    text-align: center;
+    padding: 20px;
+}
+
+.contactoForm form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactoForm h2{
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.contactoForm form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contactoForm form p{
+    margin: 0px;
+    padding: 15px;
+}
+
+.contactoForm form .block {
+    grid-column: 1 / 3;
+}
+
+.acepTermino{
+    text-align: center;
+    border: 1px solid red;
+    grid-column: 1 / 3;
+    font-weight: bold;
+    color: red;
+}
+
+.contactoForm form button,
+.contactoForm form input,
+.contactoForm form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid rgb(221, 224, 19);
+}
+
+.contactoForm form button {
+    background-color: rgb(221, 224, 19);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contactoForm form button:hover,
+.contactoForm form button:focus {
+    background: aqua;
+    transition: 1s all;
+}
+
+/*ContactoInformacion*/
+.contactoInformacion{
+    background: azure;
+}
+
+.contactoInformacion h3,
+.contactoInformacion li,
+.contactoInformacion p {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+/*Ubicacion*/
+.pGoogle{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.ifGoogle{
+    border: 5px black solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pUbicacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: darkblue;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/*Ofertas (Falta colocar cosas)*/
+.divPadreOferta{
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.containerOferta{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.tituloPagesOferta{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.imgOferta:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s all;
+    border: 4px solid rgb(218, 11, 11);
+}
+
+/*Productos*/
+.divPadreProd{
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    border:rgb(0, 0, 0) 3px solid ;
+    cursor: pointer;
+    
+}
+
+.tituloProd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parrafoProd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(110, 19, 19);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*footer*/
+footer{
+    display: grid;
+    grid-template-areas: 'parrafo contacto image';
+    height: 100px;
+    background-color: rgb(214, 214, 160);
+    margin-top: 10px;
+}
+
+.pFooter{
+    grid-area: parrafo;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.contacFooter{
+    height: 100%;
+    grid-area: contacto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tituloContacto{
+    grid-area: contacto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafoContacto{
+    padding: 5px;
+    color: rgb(255, 51, 0);
+    font-family: cursive;
+}
+
+.pRedes{
+    grid-area: redes;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 5px;
+}
+
+.iconoInstagram{
+    width: 60px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    border: white;
+}
+
+.iconoFacebook{
+    width: 60px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    border: white;
+}
+
+
+
+/*Media queries max 600px*/
+@media only screen and (max-width: 600px){
+/*nav*/
+    .imgHeader{
+        width: 100%;
+    }
+
+    .liMenu{
+        padding: 8px;
+        font-size: 20px;
+    }
+
+    .ulMenu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .tituloPages{
+        font-size: 25px;
+    }
+
+/*index*/
+    .tituloIndex{
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        font-size: 20px;
+    }
+
+    .parrafoVideo{
+        font-size: 15px;
+    }
+
+    span{
+        display: none;
+    }
+
+    iframe{
+        width: 90%;
+    }
+
+    .pDestacados{
+        font-size: 14px;
+    }
+
+    .cPadre{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto auto;
+        background-color: rgb(236, 195, 195);
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        text-align: center;
+    }
+
+/*Productos*/
+    .divPadreProd{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto auto auto auto auto;
+        height: 1800px;
+}
+
+/*oferta*/
+    .divPadreOferta{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto auto auto auto auto;
+        height: 1800px;
+}
+
+/*ubicacion*/
+.pUbicacion{
+    font-size: 20px;
+}
+
+.pGoogle{
+    font-size: 15px;
+    text-align: center;
+    color: brown;
+}
+
+.ifGoogle:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1s all;
+}
+
+.tituContac{
+    font-size: 25px;
+}
+
+/*footer*/
+    footer{
+        height: 100px;
+    }
+
+    .pFooter{
+        font-size: 10px;
+    }
+
+    .contacFooter{
+        font-size: 10px;
+    }
+
+    .tituloContacto{
+        font-size: 10px;
+    }
+
+    .pRedes{
+        font-size: 9px;
+    }
+
+    .iconoInstagram{
+        width: 50px;
+    }
+
+    .iconoFacebook{
+        width: 50px;
+    }
+
+}
+
+/*Media queries min 600px*/
+@media only screen and (min-width: 600px){
+/*nav*/
+    .imgHeader{
+        width: 100%;
+    }
+
+    .liMenu{
+        font-size: 20px;
+        margin: 3px;
+        padding: 1px;
+        
+    }
+
+    .ulMenu{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .tituloPages{
+        font-size: 30px;
+    }
+
+/*index*/
+    .tituloIndex{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 25px;
+    }
+
+    .parrafoVideo{
+        font-size: 18px;
+    }
+
+    span{
+        display: none;
+    }
+
+    iframe{
+        width: 90%;
+    }
+
+    .pDestacados{
+        font-size: 14px;
+    }
+
+    .cPadre{
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto auto auto;
+        background-color: rgb(86, 95, 134);
+        justify-content: space-evenly;
+        align-items: center;
+        height: 600px;
+        text-align: center;
+        
+    }
+
+/*ubicacion*/
+    .pUbicacion{
+        font-size: 25px;
+}
+
+    .pGoogle{
+        font-size: 20px;
+        text-align: center;
+        color: brown;
+}
+
+    .ifGoogle:hover{
+        transform: scale(1.1, 1.1);
+        transition: 1s all;
+}
+
+/*footer*/
+    footer{
+        height: 100px;
+    }
+
+    .pFooter{
+        font-size: 10px;
+    }
+
+    .contacFooter{
+        font-size: 12px;
+    }
+
+    .tituloContacto{
+        font-size: 12px;
+    }
+
+    .pRedes{
+        font-size: 12px;
+    }
+
+    .iconoInstagram{
+        width: 50px;
+    }
+
+    .iconoFacebook{
+        width: 50px;
+    }
+}
+
+/*Media queries min 908px*/
+@media only screen and (min-width: 908px){
+/*nav*/
+    .imgHeader{
+        width: 80px;
+        display: flex;
+        left: 10px;
+        border: none;
+    }
+
+    .liMenu{
+        padding: 20px;
+        margin: 0 10px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .tituloPages{
+        font-size: 35px;
+    }
+
+/*index*/
+    .tituloIndex{
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .parrafoVideo{
+        font-size: 20px;
+    }
+
+
+    iframe{
+        width: 95%;
+    }
+
+    .pDestacados{
+        font-size: 15px;
+    }
+
+    .cPadre{   
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(9, 109, 109, 0.986);
+        height: 600px;
+        border: 2px solid black;
+    }
+
+/*contacto*/
+.divPadre {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contactoForm {
+    padding: 50px;
+}
+
+.contactoForm h2 {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.contactoInformacion h3,
+.contactoInformacion li,
+.contactoInformacion p {
+    padding: 25px;
+}
+
+/*footer*/
+    footer{
+        height: 100px;
+    }
+
+    .pFooter{
+        font-size: 15px;
+    }
+
+    .contacFooter{
+        font-size: 15px;
+    }
+
+    .tituloContacto{
+        font-size: 20px;
+    }
+
+    .pRedes{
+        font-size: 20px;
+    }
+
+    .iconoInstagram{
+        width: 60px;
+    }
+
+    .iconoFacebook{
+        width: 60px;
+    }
+
+}
