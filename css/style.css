@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgba(172, 165, 165, 0.212);
+    background-color: #FFFFFF;
 }
 
 .imgHeader{
@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    background-color: rgba(9, 109, 109, 0.986);
+    background-color: #E8F0FF;
     display: flex;
     flex-direction: row;
 }
@@ -45,7 +45,7 @@ header{
 }
 
 .linkMenu{
-    color: rgb(199, 161, 65);
+    color: #000000;
     text-decoration: none;
     list-style: none;
     font-weight: bold;
@@ -66,21 +66,10 @@ header{
 }
 
 .tituloPages{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 35px;
-}
-
-.subtitulo{
-    margin: 10px 0 0 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline-block;
-    background-color: rgb(199, 161, 65);
-    border-radius: 8px;
+    animation-name: titulo;
+    animation-duration: 3s;
 }
 
 .iconoWhatsapp{
@@ -98,11 +87,33 @@ header{
     font-size: 40px;
 }
 
+.subtituloIndex{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: red;
+    animation-name: titulo;
+    animation-duration: 1s;
+}
+
+@keyframes titulo{
+
+    from{
+        opacity: 0;
+        font-size: 10px;
+    } 
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
 iframe{
     width: 95%;
     display: flex;
     margin: 20px 0 0 25px;
-    border: rgb(170, 108, 108) 5px solid;
+    border: #480402;
     border-radius: 10px;
 }
 
@@ -111,7 +122,7 @@ iframe{
     justify-content: center;
     flex-direction: row;
     margin-top: 20px;
-    background-color:rgba(9, 109, 109, 0.986);
+    background-color: #846532;
     color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -135,6 +146,34 @@ iframe{
     display: flex;
     margin: 20px auto;
     border: 5px black solid;
+    animation-name: imgDestacados;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes imgDestacados{
+
+    10%{
+        width: 10%;
+        display: flex;
+        margin: 20px auto;
+        border: none;
+    }
+
+    50%{
+        width: 50%;
+        display: flex;
+        margin: 20px auto;
+        border: none;
+    }
+
+    100%{
+        width: 95%;
+    display: flex;
+    margin: 20px auto;
+    border: 5px black solid;
+    }
+
 }
 
 .cPadre{   
@@ -144,7 +183,7 @@ iframe{
     margin-top: 50px;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(9, 109, 109, 0.986);
+    background-color: #846532;
     height: 600px;
     border: 2px solid black;
 }
@@ -202,6 +241,8 @@ iframe{
 .tituContac{
     text-align: center;
     padding: 20px;
+    animation-name: titulo;
+    animation-duration: 3s;
 }
 
 .contactoForm form {
@@ -283,23 +324,11 @@ iframe{
     height: 100px;
 }
 
-
 .ifGoogle{
     border: 5px black solid;
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
-
-.pUbicacion{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 40px;
-    color: darkblue;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 /*Ofertas (Falta colocar cosas)*/
@@ -323,6 +352,8 @@ iframe{
     color: white;
     display: flex;
     justify-content: center;
+    animation-name: titulo;
+    animation-duration: 3s;
 }
 
 .imgOferta:hover{
@@ -359,7 +390,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: rgb(110, 19, 19);
+    color: red;
     font-weight: bold;
     font-size: 20px;
 }
@@ -369,7 +400,7 @@ footer{
     display: grid;
     grid-template-areas: 'parrafo contacto image';
     height: 100px;
-    background-color: rgb(214, 214, 160);
+    background-color: #CBCAB6;
     margin-top: 10px;
 }
 
@@ -404,7 +435,7 @@ footer{
 
 .parrafoContacto{
     padding: 5px;
-    color: rgb(255, 51, 0);
+    color: #846532;
     font-family: cursive;
 }
 
@@ -484,7 +515,7 @@ footer{
     .cPadre{
         grid-template-columns: 45% 45%;
         grid-template-rows: auto auto auto;
-        background-color: rgb(236, 195, 195);
+        background-color: #846532;
         justify-content: center;
         align-items: center;
         height: 800px;
@@ -608,7 +639,7 @@ footer{
     .cPadre{
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: auto auto auto;
-        background-color: rgb(86, 95, 134);
+        background-color: #846532;
         justify-content: space-evenly;
         align-items: center;
         height: 600px;
@@ -712,7 +743,7 @@ footer{
         margin-top: 50px;
         justify-content: space-evenly;
         align-items: center;
-        background-color: rgba(9, 109, 109, 0.986);
+        background-color: #846532;
         height: 600px;
         border: 2px solid black;
     }
