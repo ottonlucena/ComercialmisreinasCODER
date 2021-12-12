@@ -185,7 +185,7 @@ iframe{
     align-items: center;
     background-color: #846532;
     height: 600px;
-    border: 2px solid black;
+    box-shadow: 0 0 20px 0 rgb(12, 8, 1)
 }
 
 .textoDiv{
@@ -194,8 +194,6 @@ iframe{
     text-align: center;
     justify-content: space-between;
 }
-
-
 
 .productoIndex{
     width: 150px;
@@ -340,6 +338,7 @@ iframe{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    box-shadow: 0 0 20px 0 rgb(12, 8, 1)
 }
 
 .containerOferta{
