@@ -14,22 +14,8 @@ body{
     border: none;
 }
 
-header{
-    background-color: #E8F0FF;
-    display: flex;
-    flex-direction: row;
-}
-
 /*menu*/
-.navMenu{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.ulMenu{
+.navbar-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,22 +23,18 @@ header{
     flex-wrap: wrap;
 }
 
-.liMenu{
+.nav-item{
     padding: 20px;
     margin: 0 10px;
     text-decoration: none;
     list-style: none;
 }
 
-.linkMenu{
+.nav-link{
     color: #000000;
     text-decoration: none;
     list-style: none;
     font-weight: bold;
-}
-
-.liMenu:hover .linkMenu{
-    color:rgb(253, 253, 253)
 }
 
 /*main*/
@@ -120,6 +102,7 @@ iframe{
 .parrafoVideo{
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: row;
     margin-top: 20px;
     background-color: #846532;
@@ -185,7 +168,7 @@ iframe{
     align-items: center;
     background-color: #846532;
     height: 600px;
-    box-shadow: 0 0 20px 0 rgb(12, 8, 1)
+    
 }
 
 .textoDiv{
@@ -341,6 +324,10 @@ iframe{
     box-shadow: 0 0 20px 0 rgb(12, 8, 1)
 }
 
+.divImg_Oferta{
+    width: 100%;
+}
+
 .containerOferta{
     width: 100%;
     height: 100%;
@@ -355,11 +342,11 @@ iframe{
     animation-duration: 3s;
 }
 
-.imgOferta:hover{
-    transform: scale(1.1,1.1);
-    transition: 1s all;
-    border: 4px solid rgb(218, 11, 11);
+.imgOferta{
+    width: 100%;
+    cursor: pointer;
 }
+
 
 /*Productos*/
 .divPadreProd{
@@ -372,11 +359,15 @@ iframe{
     text-align: center;
 }
 
-img{
-    width: 200px;
+.imgProductos{
+    width: 100%;
     border:rgb(0, 0, 0) 3px solid ;
     cursor: pointer;
     
+}
+
+.divImg_Productos{
+    width: 100%;
 }
 
 .tituloProd{
@@ -398,7 +389,7 @@ img{
 footer{
     display: grid;
     grid-template-areas: 'parrafo contacto image';
-    height: 100px;
+    height: 200px;
     background-color: #CBCAB6;
     margin-top: 10px;
 }
@@ -435,7 +426,6 @@ footer{
 .parrafoContacto{
     padding: 5px;
     color: #846532;
-    font-family: cursive;
 }
 
 .pRedes{
@@ -488,7 +478,7 @@ footer{
 
 /*index*/
     .tituloIndex{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .subtitulo{
@@ -556,10 +546,6 @@ footer{
 }
 
 /*footer*/
-    footer{
-        height: 100px;
-    }
-
     .pFooter{
         font-size: 10px;
     }
@@ -663,10 +649,6 @@ footer{
 }
 
 /*footer*/
-    footer{
-        height: 100px;
-    }
-
     .pFooter{
         font-size: 10px;
     }
@@ -769,10 +751,6 @@ footer{
 }
 
 /*footer*/
-    footer{
-        height: 100px;
-    }
-
     .pFooter{
         font-size: 15px;
     }
