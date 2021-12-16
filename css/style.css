@@ -345,6 +345,7 @@ iframe{
 .imgOferta{
     width: 100%;
     cursor: pointer;
+    max-width: 200px;
 }
 
 
@@ -361,6 +362,7 @@ iframe{
 
 .imgProductos{
     width: 100%;
+    max-width: 200px;
     border:rgb(0, 0, 0) 3px solid ;
     cursor: pointer;
     
@@ -577,6 +579,7 @@ footer{
 /*nav*/
     .imgHeader{
         width: 100%;
+        
     }
 
     .liMenu{
